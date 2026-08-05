@@ -1,0 +1,205 @@
+/*******************************************************************************
+ * Mare Profondo theme for al-folio  —  complete drop-in for _sass/_themes.scss
+ * Replace the ENTIRE contents of _sass/_themes.scss with this file.
+ * Only the color values were changed; all toggle/back-to-top/icon rules are
+ * preserved exactly as al-folio ships them.
+ *
+ * Palette: linen #F6F1E7 · paper #FBF8F0 · wheat #E7D8B1 · ink #2B2E22
+ *          sea #245A78 · sienna #C0521C · olive #5F6E34 · ochre #E4A72B
+ *          pine #12505E · sage #9DB08A · deep-sea bg #0A2A33
+ ******************************************************************************/
+
+@use "variables" as v;
+@use "sass:color";
+
+:root {
+  color-scheme: light;
+  --global-bg-color: #f6f1e7; /* linen */
+  --global-code-bg-color: #eee7d6;
+  --global-text-color: #2b2e22; /* ink */
+  --global-text-color-light: #6e6b57;
+  --global-theme-color: #245a78; /* Deep Sea Blue — links/accent */
+  --global-hover-color: #c0521c; /* Burnt Sienna — hover */
+  --global-hover-text-color: #ffffff;
+  --global-footer-bg-color: #12505e; /* pine */
+  --global-footer-text-color: #e7d8b1; /* wheat */
+  --global-footer-link-color: #f6f1e7; /* linen */
+  --global-distill-app-color: #6e6b57;
+  --global-divider-color: rgba(43, 46, 34, 0.12);
+  --global-card-bg-color: #fbf8f0; /* paper */
+  --global-highlight-color: #c0521c;
+  --global-back-to-top-bg-color: rgba(36, 90, 120, 0.85);
+  --global-back-to-top-text-color: #ffffff;
+  --global-newsletter-bg-color: #fbf8f0;
+  --global-newsletter-text-color: #2b2e22;
+
+  --global-tip-block: #5f6e34; /* olive */
+  --global-tip-block-bg: #ecf0e0;
+  --global-tip-block-text: #3e4a24;
+  --global-tip-block-title: #4c5a28;
+  --global-warning-block: #e4a72b; /* ochre */
+  --global-warning-block-bg: #fbf1d6;
+  --global-warning-block-text: #6b5312;
+  --global-warning-block-title: #9a7414;
+  --global-danger-block: #c0521c; /* sienna */
+  --global-danger-block-bg: #f7e4da;
+  --global-danger-block-text: #7a3117;
+  --global-danger-block-title: #9c4018;
+
+  #light-toggle-system {
+    display: inline-block;
+  }
+
+  #light-toggle-dark {
+    display: none;
+  }
+
+  #light-toggle-light {
+    display: none;
+  }
+
+  .only-light {
+    display: block;
+  }
+
+  .only-dark {
+    display: none;
+  }
+
+  #back-to-top {
+    color: var(--global-back-to-top-text-color);
+    background: var(--global-back-to-top-bg-color);
+    bottom: v.$back-to-top-bottom;
+    right: v.$back-to-top-right;
+    height: v.$back-to-top-height;
+    width: v.$back-to-top-width;
+    z-index: v.$back-to-top-z-index;
+  }
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --global-bg-color: #0a2a33; /* deep sea */
+  --global-code-bg-color: #103f49;
+  --global-text-color: #f6f1e7; /* linen */
+  --global-text-color-light: #9db08a; /* sage */
+  --global-theme-color: #4e93b4; /* lightened sea */
+  --global-hover-color: #e4a72b; /* ochre */
+  --global-hover-text-color: #0a2a33;
+  --global-footer-bg-color: #06222a;
+  --global-footer-text-color: #9db08a;
+  --global-footer-link-color: #e7d8b1;
+  --global-distill-app-color: #9db08a;
+  --global-divider-color: rgba(246, 241, 231, 0.14);
+  --global-card-bg-color: #12505e; /* pine cards */
+  --global-highlight-color: #e4a72b;
+  --global-back-to-top-bg-color: rgba(78, 147, 180, 0.6);
+  --global-back-to-top-text-color: #0a2a33;
+  --global-newsletter-bg-color: #12505e;
+  --global-newsletter-text-color: #f6f1e7;
+
+  --global-tip-block: #9db08a;
+  --global-tip-block-bg: #1e3b2c;
+  --global-tip-block-text: #ddebcf;
+  --global-tip-block-title: #c7ddb4;
+  --global-warning-block: #e4a72b;
+  --global-warning-block-bg: #4a3a0e;
+  --global-warning-block-text: #fbe9bd;
+  --global-warning-block-title: #f3d48a;
+  --global-danger-block: #e0714a;
+  --global-danger-block-bg: #4a2116;
+  --global-danger-block-text: #f6c7b4;
+  --global-danger-block-title: #f0a98c;
+
+  .only-light {
+    display: none;
+  }
+
+  .only-dark {
+    display: block;
+  }
+}
+
+html[data-theme-setting="dark"] {
+  #light-toggle-system {
+    display: none;
+  }
+
+  #light-toggle-dark {
+    display: inline-block;
+  }
+
+  #light-toggle-light {
+    display: none;
+  }
+
+  #back-to-top {
+    color: var(--global-back-to-top-text-color);
+    background: var(--global-back-to-top-bg-color);
+  }
+}
+
+html[data-theme-setting="light"] {
+  #light-toggle-system {
+    display: none;
+  }
+
+  #light-toggle-dark {
+    display: none;
+  }
+
+  #light-toggle-light {
+    display: inline-block;
+  }
+}
+
+.fa-half-sun-moon {
+  position: relative;
+  display: inline-block;
+  --fa-font: var(--fa-font-solid);
+  speak: none;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 1em;
+  height: 1em;
+}
+
+.fa-half-sun-moon::before,
+.fa-half-sun-moon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: -0.5px;
+  bottom: -0.5px;
+  text-align: center;
+  line-height: 1em;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  font: var(--fa-font);
+}
+
+/* Left half: MOON */
+.fa-half-sun-moon::before {
+  content: "\f111";
+  color: var(--global-text-color);
+  clip-path: polygon(0 0, calc(50% - 0.5px) 0, calc(50% - 0.5px) 100%, 0 100%);
+}
+
+/* Right half: SUN */
+.fa-half-sun-moon::after {
+  content: "\f185";
+  color: var(--global-text-color);
+  clip-path: polygon(calc(50% + 0.5px) 0, 100% 0, 100% 100%, calc(50% + 0.5px) 100%);
+  right: -1.5px; /* slight overflow to avoid right-edge clipping */
+  transform: translateX(-1px); /* visually re-center the sun half */
+}
+
+#light-toggle:hover .fa-half-sun-moon::before {
+  color: var(--global-theme-color);
+}
+
+#light-toggle:hover .fa-half-sun-moon::after {
+  color: var(--global-theme-color);
+}
