@@ -6,8 +6,15 @@
 # type options:  presentation  |  invited   |  poster  |  conference-paper
 
 - title: "Techno-Economic Analysis of Clean Ammonia Production in the Permian Basin"
-  authors: "K. Maynor, ..., V. Bahadur"
+  authors: "K. Maynor, M. Hamalian, V. Bahadur"
   venue: "ASME 2025 19th International Conference on Energy Sustainability (ES2025)"
   location: "Westminster, CO"
   date: 2025-07
-  type: conference-presentation
+  type: presentation
+
+- title: "Ultrafast formation of carbon dioxide hydrates from mixtures of carbon dioxide and nitrogen gases"
+  authors: "K. Maynor, M. Hamalian, V. Bahadur"
+  venue: "ASME 2025 19th International Conference on Energy Sustainability (ES2025)"
+  location: "Westminster, CO"
+  date: 2025-07
+  type: presentation
