@@ -14,11 +14,11 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #f6f1e7; /* linen */
+  --global-bg-color: #FBF8F0; /* paper */
   --global-code-bg-color: #eee7d6;
   --global-text-color: #1A1C15; /* ink #2B2E22*/
   --global-text-color-light: #6e6b57;
-  --global-theme-color: #C0521C; /* Burnt Sienna — links/accent */
+  --global-theme-color: #C25417; /* Burnt Sienna — links/accent */
   --global-hover-color: #7A3117; /* Deeper Burnt Sienna — hover */
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #12505e; /* pine */
@@ -210,4 +210,12 @@ html,
 body {
   background-color: var(--global-bg-color) !important;
   color: var(--global-text-color);
+}
+
+/* underline links inside body text so they're unmistakable */
+p a,
+li a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
 }
