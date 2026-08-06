@@ -1,0 +1,13 @@
+# _data/talks.yml
+# Conference talks, invited talks, posters, and conference papers — the
+# "separate area" kept out of papers.bib. Add one block per item, newest first.
+# Only title, venue, and date are required; everything else is optional.
+#
+# type options:  presentation  |  invited   |  poster  |  conference-paper
+
+- title: "Techno-Economic Analysis of Clean Ammonia Production in the Permian Basin"
+  authors: "K. Maynor, ..., V. Bahadur"
+  venue: "ASME 2025 19th International Conference on Energy Sustainability (ES2025)"
+  location: "Westminster, CO"
+  date: 2025-07
+  type: conference-presentation
