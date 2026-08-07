@@ -4,24 +4,25 @@ permalink: /talks/
 title: talks
 nav: true
 nav_order: 4
-description: Conference presentations, invited talks, posters, and conference papers.
+description: Conference papers, presentations, posters, and workshops.
 ---
 
-{% assign items = site.data.talks | sort: "date" | reverse %}
-{% assign grouped = items | group_by_exp: "item", "item.date | date: '%Y'" %}
-
-{% for group in grouped %}
-<h2>{{ group.name }}</h2>
+{% assign cats = "Conference Papers,Presentations,Workshops & Reports" | split: "," %}
+{% for cat in cats %}
+{% assign items = site.data.talks | where: "category", cat | sort: "date" | reverse %}
+{% if items.size > 0 %}
+<h2>{{ cat }}</h2>
 <ul>
-{% for t in group.items %}
+{% for t in items %}
   <li style="margin-bottom: 0.9rem;">
-    <strong>{{ t.title }}</strong>{% if t.award %} &nbsp;<span style="color: var(--global-theme-color);">★ {{ t.award }}</span>{% endif %}<br>
+    <strong>{{ t.title }}</strong>{% if t.type %} &nbsp;<span style="opacity: 0.7;">[{{ t.type }}]</span>{% endif %}{% if t.award %} &nbsp;<span style="color: var(--global-theme-color);">★ {{ t.award }}</span>{% endif %}<br>
     {% if t.authors %}{{ t.authors }}<br>{% endif %}
-    <em>{{ t.venue }}</em>{% if t.location %}, {{ t.location }}{% endif %} &middot; {{ t.date | date: "%B %Y" }}{% if t.type %} &middot; {{ t.type }}{% endif %}
+    <em>{{ t.venue }}</em>{% if t.location %}, {{ t.location }}{% endif %} &middot; {% if t.date_text %}{{ t.date_text }}{% else %}{{ t.date | date: "%B %Y" }}{% endif %}
     {% if t.slides %} &middot; <a href="{{ t.slides | relative_url }}">Slides</a>{% endif %}
     {% if t.link %} &middot; <a href="{{ t.link }}">Link</a>{% endif %}
     {% if t.doi %} &middot; <a href="https://doi.org/{{ t.doi }}">DOI</a>{% endif %}
   </li>
 {% endfor %}
 </ul>
+{% endif %}
 {% endfor %}
