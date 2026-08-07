@@ -1,20 +1,128 @@
 # _data/talks.yml
-# Conference talks, invited talks, posters, and conference papers — the
-# "separate area" kept out of papers.bib. Add one block per item, newest first.
-# Only title, venue, and date are required; everything else is optional.
-#
-# type options:  presentation  |  invited   |  poster  |  conference-paper
+# Conference papers, presentations, posters, and workshops — the "separate
+# area" kept out of papers.bib (which holds journal articles only).
+# Grouped on the page by `category`; sorted newest-first within each group.
+# Add a new item by copying a block. Required: title, venue, date, category.
 
-- title: "Techno-Economic Analysis of Clean Ammonia Production in the Permian Basin"
+# ============================ CONFERENCE PAPERS ============================
+- title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+  authors: "K. Maynor, G. Childers, T. Soori, N. Lin, M. Lewis, V. Bahadur"
+  venue: "ASME 2025 19th International Conference on Energy Sustainability (ES2025)"
+  location: "Westminster, CO"
+  date: 2025-07-10
+  type: Oral
+  category: Conference Papers
+
+- title: "Carbon Dioxide Hydrate Formation-Based Carbon Capture from Mixtures of Carbon Dioxide and Nitrogen"
   authors: "K. Maynor, M. Hamalian, V. Bahadur"
   venue: "ASME 2025 19th International Conference on Energy Sustainability (ES2025)"
   location: "Westminster, CO"
-  date: 2025-07
-  type: presentation
+  date: 2025-07-08
+  type: Oral
+  category: Conference Papers
 
-- title: "Ultrafast formation of carbon dioxide hydrates from mixtures of carbon dioxide and nitrogen gases"
+- title: "Effects of Bubble Size and Density on CO₂ Hydrate Slurry Production for Carbon Sequestration"
+  authors: "M. Hamalian, K. Maynor, V. Bahadur"
+  venue: "ASME 2025 19th International Conference on Energy Sustainability (ES2025)"
+  location: "Westminster, CO"
+  date: 2025-07-08
+  award: "Best Paper"
+  category: Conference Papers
+
+# ============================== PRESENTATIONS =============================
+- title: "Process Intensification to Enable CO₂ Hydrates-Based Seabed Carbon Sequestration"
+  authors: "K. Maynor, M. Hamalian, V. Bahadur"
+  venue: "11th International Conference on Gas Hydrates (ICGH-11) & 3rd European Conference on Gas Hydrates (ECGH-3)"
+  location: "Lyon, France"
+  date: 2026-07-03
+  category: Presentation
+
+- title: "Process Intensification to Enable CO₂ Hydrates-Based Seabed Carbon Sequestration"
+  authors: "K. Maynor, M. Hamalian, V. Bahadur"
+  venue: "Center for Energy Resources Engineering Seminar Series"
+  location: "Lyngby, Denmark"
+  date: 2026-06-11
+  category: Invited Talk
+  
+- title: "Carbon Dioxide Hydrate Formation-Based Carbon Capture from Mixtures of Carbon Dioxide and Nitrogen"
   authors: "K. Maynor, M. Hamalian, V. Bahadur"
   venue: "ASME 2025 19th International Conference on Energy Sustainability (ES2025)"
   location: "Westminster, CO"
-  date: 2025-07
-  type: presentation
+  date: 2025-07-08
+  type: Oral
+  category: Presentations
+
+# (the green-ammonia techno-economic work, presented across six venues)
+- title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+  authors: "K. Maynor, G. Childers, T. Soori, N. Lin, M. Lewis, V. Bahadur"
+  venue: "ASME 2025 19th International Conference on Energy Sustainability (ES2025)"
+  location: "Westminster, CO"
+  date: 2025-07-10
+  type: Oral
+  category: Presentations
+
+- title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+  authors: "K. Maynor, G. Childers, T. Soori, N. Lin, M. Lewis, V. Bahadur"
+  venue: "UT Austin Energy Institute — Hydrogen Workforce Summit & Hydrogen Day 2024"
+  location: "Austin, TX"
+  date: 2024-10-07
+  type: Poster
+  award: "5th place, poster competition (of 41)"
+  category: Presentations
+
+- title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+  authors: "K. Maynor, G. Childers, T. Soori, N. Lin, M. Lewis, V. Bahadur"
+  venue: "Chevron Energy Fellows Virtual Forum"
+  date: 2024-06-12
+  type: Oral
+  category: Presentations
+
+- title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+  authors: "K. Maynor, G. Childers, T. Soori, N. Lin, M. Lewis, V. Bahadur"
+  venue: "UT Austin Center for Electromechanics — H2@Scale in Texas Ribbon-Cutting Ceremony"
+  location: "Austin, TX"
+  date: 2024-04-23
+  type: Poster
+  category: Presentations
+
+- title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+  authors: "K. Maynor, G. Childers, T. Soori, N. Lin, M. Lewis, V. Bahadur"
+  venue: "UT Austin Energy Institute — UT Energy Week"
+  location: "Austin, TX"
+  date: 2024-03-26
+  type: Oral & Poster
+  category: Presentations
+
+- title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+  authors: "K. Maynor, G. Childers, T. Soori, N. Lin, M. Lewis, V. Bahadur"
+  venue: "ASME 2023 International Mechanical Engineering Congress & Exposition (IMECE)"
+  location: "New Orleans, LA"
+  date: 2023-11-01
+  type: Oral
+  category: Presentations
+
+# ========================== WORKSHOPS & REPORTS ==========================
+- title: "Carbon Dioxide Hydrates for Carbon Management: Opportunities for Capture, Storage, and Utilization"
+  authors: "K. Maynor, A. P. da Costa Ribeiro"
+  venue: "9th Multidisciplinary Symposium on Circular Economy and Urban Mining"
+  location: "Procida, Italy"
+  date: 2026-05-19
+  type: Workshop
+  category: Workshops & Reports
+
+- title: "Water Use Requirements for Data Centers in Texas: A White Paper on the Evolving Demands of Water Use in Data Center Infrastructure in Texas"
+  authors: "M. Arzumanyan, V. Bahadur, N. Lin, T. H. Rupam, K. Maynor, S. Katakam, M. Usama"
+  venue: "Bureau of Economic Geology, The University of Texas at Austin"
+  date: 2025-12-11
+  type: White Paper
+  link: "https://compass.beg.utexas.edu/"
+  category: Workshops & Reports
+
+- title: "PHE-18-TR: Shellside Boiling Tests in a Plate-and-Shell Heat Exchanger"
+  authors: "K. Maynor, L. Huang"
+  venue: "Heat Transfer Research, Inc."
+  location: "Navasota, TX"
+  date: 2018-01-01
+  date_text: "2018"
+  type: Technical Report
+  category: Workshops & Reports
