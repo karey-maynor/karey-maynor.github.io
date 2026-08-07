@@ -219,3 +219,10 @@ li a {
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
 }
+
+/* Publications: bold my name instead of underlining it */
+.bibliography .author strong,
+.bibliography .author u {
+  font-weight: 700;
+  text-decoration: none;
+}
