@@ -1,0 +1,78 @@
+# _data/conferences.yml
+# Organized BY EVENT (not by type). Each block is one conference; list what you
+# presented there under `items`. Everything except `name` and `date` is optional
+# — including `image` (a photo of you presenting) and `role` (e.g., session chair).
+# Add a conference you attended but didn't present at by giving it no `items`.
+
+- name: "International Conference on Gas Hydrates (ICGH-11) & 3rd European Conference on Gas Hydrates"
+  location: "Lyon, France"
+  date: 2026-07-03
+  # image: assets/img/conferences/icgh11.jpg
+  items:
+    - title: "Process Intensification to Enable CO₂ Hydrates-Based Seabed Carbon Sequestration"
+      type: "Conference paper · Oral"
+      authors: "K. Maynor, M. Hamalian, V. Bahadur"
+
+- name: "ASME 19th International Conference on Energy Sustainability (ES2025)"
+  location: "Westminster, CO"
+  date: 2025-07-01
+  # role: "Session chair"
+  # image: assets/img/conferences/es2025.jpg
+  items:
+    - title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+      type: "Conference paper · Oral"
+      authors: "K. Maynor, G. Childers, T. Soori, N. Lin, M. Lewis, V. Bahadur"
+    - title: "Carbon Dioxide Hydrate Formation-Based Carbon Capture from Mixtures of Carbon Dioxide and Nitrogen"
+      type: "Conference paper · Oral"
+      authors: "K. Maynor, M. Hamalian, V. Bahadur"
+    - title: "Effects of Bubble Size and Density on CO₂ Hydrate Slurry Production for Carbon Sequestration"
+      type: "Conference paper"
+      award: "Best Paper"
+      authors: "M. Hamalian, K. Maynor, V. Bahadur"
+
+- name: "UT Austin Energy Institute — UT Energy Week"
+  location: "Austin, TX"
+  date: 2025-03-01
+  # image: assets/img/conferences/ut-energy-week.jpg
+  items:
+    - title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+      type: "Oral & Poster"
+
+- name: "UT Austin Energy Institute — Hydrogen Workforce Summit & Hydrogen Day"
+  location: "Austin, TX"
+  date: 2024-10-01
+  # image: assets/img/conferences/hydrogen-day.jpg
+  items:
+    - title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+      type: "Poster"
+      award: "5th place, poster competition (of 41)"
+
+- name: "Chevron Energy Fellows Virtual Forum"
+  date: 2024-06-01
+  items:
+    - title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+      type: "Oral"
+
+- name: "UT Austin Center for Electromechanics — H2@Scale in Texas Ribbon-Cutting Ceremony"
+  location: "Austin, TX"
+  date: 2024-04-01
+  items:
+    - title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+      type: "Poster"
+
+- name: "ASME International Mechanical Engineering Congress & Exposition (IMECE)"
+  location: "New Orleans, LA"
+  date: 2023-11-01
+  items:
+    - title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
+      type: "Oral"
+
+- name: "9th Multidisciplinary Symposium on Circular Economy and Urban Mining"
+  location: "Procida, Italy"
+  date: 2026-05-01
+  date_text: "2026"
+  # image: assets/img/conferences/procida.jpg
+  items:
+    - title: "Carbon Dioxide Hydrates for Carbon Management: Opportunities for Capture, Storage, and Utilization"
+      type: "Invited workshop"
+      authors: "K. Maynor, A. P. da Costa Ribeiro"
