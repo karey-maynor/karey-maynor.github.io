@@ -1,0 +1,54 @@
+name: Update publications from ORCID
+
+on:
+  schedule:
+    - cron: "17 10 * * 1" # every Monday, ~6am US Eastern
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview only: list what would be added without changing anything"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write # commit the updated papers.bib
+  actions: write # start the "Deploy site" workflow afterwards
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Add new ORCID works to papers.bib
+        env:
+          ORCID_ID: "0009-0009-3351-8408"
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then
+            python bin/update_bib_from_orcid.py --dry-run
+          else
+            python bin/update_bib_from_orcid.py
+          fi
+
+      - name: Commit, push and redeploy if anything changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- _bibliography/papers.bib; then
+            echo "papers.bib unchanged; nothing to deploy."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _bibliography/papers.bib
+          git commit -m "Add new publications from ORCID"
+          git push
+          # Pushes made by this workflow don't trigger other workflows on their own,
+          # so start the site deploy explicitly.
+          gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
