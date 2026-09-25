@@ -25,8 +25,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Postdoctoral Fellow in the [Water-Energy Research Laboratory (WERL)](https://amenonlab.me.gatech.edu/) in the [George W. Woodruff School of Mechanical Engineering](https://www.me.gatech.edu/) at Georgia Institute of Technology (Georgia Tech). My research sits at the intersection of water, energy, and carbon management. At WERL, I study desalination systems for water production and brine concentration.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I received my PhD in Mechanical Engineering (https://me.utexas.edu/) from the [Walker Department of Mechanical Engineering](https://me.utexas.edu/) at The University of Texas at Austin in 2026, working in the [Bahadur Research Group](https://bahadurlab.me.utexas.edu/) as a **National Science Foundation Graduate Research Fellow**. My doctoral research focused on enhancing heat and mass transport for carbon dioxide direct air capture and clathrate hydrate-based carbon sequestration and desalination. My work spanned fundamental experiments and materials characterization through process intensification, system-level modeling, and techno-economic and life cycle analyses. Along the way, I also worked on clean hydrogen pathways for ammonia and bioethanol production, and on thermal management for power transformers and next-generation electronics packaging.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Before graduate school, I spent four years as a Test Engineer at [Heat Transfer Research, Inc. (HTRI)](https://www.htri.net/), running pilot-scale heat transfer experiments and leading the company's ISO 17025 quality program and safety program. I received my B.S. in Chemical Engineering from the [Artie McFerrin Department of Chemical Engineering](https://engineering.tamu.edu/chemical/index.html) at Texas A&M University - College Station.
+
+Outside of research, I enjoy cooking, hiking, playing tennis, and traveling.
+
+**Areas of research interest:** desalination and brine management · carbon capture, utilization & storage · gas hydrates · direct air capture · thermal and energy systems · techno-economic and life cycle analysis · low-carbon hydrogen
