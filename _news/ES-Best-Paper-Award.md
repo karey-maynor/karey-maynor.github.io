@@ -6,5 +6,5 @@ inline: true
 related_posts: false
 ---
 
-Received the Outstanding Paper Award at the 2025 ASME Energy Sustainability Conference for ‘Effects Of Bubble Size and Density on CO<sub>2</sub> Hydrate Slurry Production for Carbon Sequestration’.
+Received the **Outstanding Paper Award** at the 2025 ASME Energy Sustainability Conference for ‘Effects Of Bubble Size and Density on CO<sub>2</sub> Hydrate Slurry Production for Carbon Sequestration’.
 Featured by [UT Austin Mechanical Engineering](https://me.utexas.edu/news/me-students-awarded-best-paper-at-energy-sustainability-conference/).
