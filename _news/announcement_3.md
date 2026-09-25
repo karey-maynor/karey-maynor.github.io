@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2026-07-16
+title: Graduate School Graduation
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Successfully defended my PhD in Mechanical Engineering from The University of Texas at Austin's Walker Department of Mechanical Engineering!
