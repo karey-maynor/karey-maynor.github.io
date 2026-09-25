@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Postdoctoral Fellow | <a href='https://amenonlab.me.gatech.edu/'>Water-Energy Research Laboratory (WERL)</a><br>. 
+  Postdoctoral Fellow | <a href='https://amenonlab.me.gatech.edu/'>Water-Energy Research Laboratory (WERL)</a><br> 
   George W. Woodruff School of Mechanical Engineering | Georgia Institute of Technology
 
 profile:
