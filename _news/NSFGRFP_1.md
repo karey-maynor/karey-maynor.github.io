@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2023-05-03
+title: Awarded the NSF GRFP
 inline: true
 related_posts: false
 ---
