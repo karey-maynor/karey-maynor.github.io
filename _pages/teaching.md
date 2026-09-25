@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Teaching, mentorship, and training in heat transfer and energy systems.
+description: Training in teaching and pedagogy, and experience in the classroom and lab.
 nav: true
 nav_order: 6
 ---
@@ -46,6 +46,14 @@ nav_order: 6
   }
 </style>
 
+<div class="tch-section">Teaching Development &amp; Certifications</div>
+<ul class="tch-certs">
+    <li><i class="fa-solid fa-award"></i><div><a href="https://ctl.gatech.edu/fff/">Future Faculty Fellows (ongoing)<span>Center for Teaching and Learning, Georgia Institute of Technology</span></div></li>
+    <li><i class="fa-solid fa-award"></i><div>Teaching Preparation Series: Advanced Certification</a><span>Center for Teaching &amp; Learning</a>, The University of Texas at Austin</span></div></li>
+   <li><i class="fa-solid fa-award"></i><div>Teaching Assistant Certification<span>Cockrell School of Engineering, The University of Texas at Austin</span></div></li>
+
+</ul>
+
 <div class="tch-section">Teaching</div>
 <div class="tch-card">
   <div class="tch-when"><strong>2022 – 2023</strong>Aug. 2022 – Apr. 2023</div>
@@ -54,7 +62,7 @@ nav_order: 6
     <div class="tch-org"><i class="fa-solid fa-building-columns"></i>The University of Texas at Austin · Walker Department of Mechanical Engineering</div>
     <div class="tch-course">ME 139L · Experimental Heat Transfer Lab</div>
     <p>Led two lab sections per semester, teaching experimental design, uncertainty analysis, and the analysis of heat transfer systems.</p>
-    <div class="tch-tags"><span>Experimental design</span><span>Uncertainty analysis</span><span>Systems analysis</span><span>Heat transfer</span></div>
+    <div class="tch-tags"><span>Experimental design</span><span>Uncertainty analysis</span><span><span>Heat transfer</span></div>
   </div>
 </div>
 
@@ -73,8 +81,4 @@ nav_order: 6
   </div>
 </div>
 
-<div class="tch-section">Training &amp; Certifications</div>
-<ul class="tch-certs">
-  <li><i class="fa-solid fa-award"></i><div>Teaching Preparation Series: Advanced Certification<span>Center for Teaching and Learning, The University of Texas at Austin</span></div></li>
-  <li><i class="fa-solid fa-award"></i><div>Teaching Assistant Certification<span>Cockrell School of Engineering, The University of Texas at Austin</span></div></li>
-</ul>
+
