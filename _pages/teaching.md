@@ -2,14 +2,21 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description:
 nav: true
 nav_order: 6
-calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+#### Graduate Teaching Assistant
+**The University of Texas at Austin** · Aug. 2022 – Apr. 2023
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+*ME 139L: Experimental Heat Transfer Lab.* Led two lab sections per semester, teaching experimental design, uncertainty analysis, and analysis of heat transfer systems.
 
-{% include courses.liquid %}
+#### Mentorship
+**Bahadur Research Group, UT Austin** · Aug. 2022 – Aug. 2026
+
+Mentored and advised new members of the research group, including 2 Ph.D., 1 master's, and 2 undergraduate students.
+
+#### Teaching Certifications
+- Advanced Certification, Teaching Preparation Series, Center for Teaching and Learning, UT Austin
+- Cockrell School of Engineering Teaching Assistant Certification
