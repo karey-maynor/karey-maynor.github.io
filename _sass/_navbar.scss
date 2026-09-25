@@ -257,3 +257,13 @@
     color: var(--global-hover-color);
   }
 }
+
+// Hide the "ctrl k" hint next to the search icon, keeping just the icon.
+// (The keyboard shortcut itself still works.)
+#search-toggle .nav-link {
+  font-size: 0;
+
+  i {
+    font-size: 1rem;
+  }
+}
