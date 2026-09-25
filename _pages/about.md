@@ -2,15 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Postdoctoral Fellow | <a href='https://amenonlab.me.gatech.edu/'>Water-Energy Research Laboratory (WERL)</a>. 
+<p> George W. Woodruff School of Mechanical Engineering | Georgia Institute of Technology </p>
 
 profile:
   align: right
   image: profile_photo.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Postdoctoral Fellow | Water-Energy Research Laboratory (WERL)</p>
-    <p> George W. Woodruff Department of Mechanical Engineering | Georgia Institute of Technology </p>
+  more_info: #
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
