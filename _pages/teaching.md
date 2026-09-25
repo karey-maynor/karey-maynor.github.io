@@ -44,6 +44,10 @@ nav_order: 6
     .tch-when { flex: none; }
     .tch-when strong { display: inline; margin-right: .4rem; }
   }
+    .tch-pdf { display: inline-block; margin-left: .4rem; padding: .05rem .5rem; font-size: .75rem;
+    border: 1px solid var(--global-theme-color); border-radius: 4px; vertical-align: middle; }
+  .tch-pdf:hover { text-decoration: none; background: var(--global-theme-color); color: var(--global-bg-color) !important; }
+  .tch-certs .tch-pdf i { font-size: .75rem; margin: 0; color: inherit; }
 </style>
 
 <div class="tch-section">Teaching Development &amp; Certifications</div>
