@@ -48,7 +48,7 @@ nav_order: 6
 
 <div class="tch-section">Teaching Development &amp; Certifications</div>
 <ul class="tch-certs">
-    <li><i class="fa-solid fa-award"></i><div><a href="https://ctl.gatech.edu/fff/">Future Faculty Fellows (ongoing program)</a>a><span>Center for Teaching and Learning, Georgia Institute of Technology</span></div></li>
+    <li><i class="fa-solid fa-award"></i><div><a href="https://ctl.gatech.edu/fff/">Future Faculty Fellows (ongoing program)</a><span>Center for Teaching and Learning, Georgia Institute of Technology</span></div></li>
     <li><i class="fa-solid fa-award"></i><div>Teaching Preparation Series: Advanced Certification</a><span>Center for Teaching &amp; Learning</a>, The University of Texas at Austin</span></div></li>
    <li><i class="fa-solid fa-award"></i><div>Teaching Assistant Certification<span>Cockrell School of Engineering, The University of Texas at Austin</span></div></li>
 
