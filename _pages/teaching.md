@@ -71,8 +71,8 @@ nav_order: 6
 <div class="tch-section">Training &amp; Certifications</div>
 <ul class="tch-certs">
   <li><i class="fa-solid fa-chalkboard-user"></i><div><a href="https://ctl.gatech.edu/fff/" target="_blank">Future Faculty Fellows Program</a> <span class="tch-now">In progress</span><span>Center for Teaching and Learning, Georgia Institute of Technology</span></div></li>
-  <li><i class="fa-solid fa-award"></i><div>Teaching Preparation Series: Advanced Certification <a class="tch-pdf" href="/assets/pdf/teaching-preparation-series-certificate.pdf" target="_blank" data-pdf-modal="Teaching Preparation Series: Advanced Certification"><i class="fa-solid fa-file-pdf"></i> Certificate</a><span>Center for Teaching &amp; Learning, The University of Texas at Austin</span></div></li>
-  <li><i class="fa-solid fa-award"></i><div>Teaching Assistant Certification<span>Cockrell School of Engineering, The University of Texas at Austin</span></div></li>
+  <li><i class="fa-solid fa-award"></i><div>Teaching Preparation Series: Advanced Certification <a class="tch-pdf" href="/assets/pdf/teaching-preparation-series-certificate.pdf" target="_blank" data-pdf-modal="Teaching Preparation Series: Advanced Certificate"><i class="fa-solid fa-file-pdf"></i> Certificate</a><span>Center for Teaching &amp; Learning, The University of Texas at Austin</span></div></li>
+  <li><i class="fa-solid fa-award"></i><div>Teaching Assistant Certification <a class="tch-pdf" href="/assets/pdf/Cockrell-certified-TA-certificate.pdf" target="_blank" data-pdf-modal="Cockrell Certified TA Certificate"><i class="fa-solid fa-file-pdf"></i> Certificate</a><span>Cockrell School of Engineering, The University of Texas at Austin</span></div></li>
 </ul>
 
 <div class="tch-section">Teaching</div>
