@@ -48,6 +48,9 @@ Outside of research, I enjoy cooking, hiking, playing tennis, and traveling.
   /* Slightly brighter versions so they stay readable in dark mode */
   html[data-theme="dark"] .social .contact-icons a .fa-linkedin::before       { color: #4C9BE8; }
   html[data-theme="dark"] .social .contact-icons a .ai-google-scholar::before { color: #7BAAF7; }
+    /* Smaller social icons (theme default is 4rem) */
+  .social .contact-icons { font-size: 2rem; }
+  .social .contact-icons a { margin: 0 .15rem; }
 </style>
 
 <script>
