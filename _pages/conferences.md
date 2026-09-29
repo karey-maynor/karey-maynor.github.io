@@ -2,7 +2,7 @@
 layout: page
 permalink: /conferences/
 title: conferences
-nav: true
+nav: false
 nav_order: 4
 description: Conferences where I've shared this work — talks, posters, and papers.
 ---
