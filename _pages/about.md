@@ -35,3 +35,17 @@ Before graduate school, I spent four years as a Test Engineer at [Heat Transfer 
 Outside of research, I enjoy cooking, hiking, playing tennis, and traveling.
 
 **Areas of research interest:** desalination and brine management · carbon capture, utilization & storage · gas hydrates · direct air capture · thermal and energy systems · techno-economic and life cycle analysis · low-carbon hydrogen
+
+<style>
+  /* Brand colors for the social icons on the home page */
+  .social .contact-icons a i::before { transition: color .2s ease, opacity .2s ease; }
+  .social .contact-icons a .fa-linkedin::before       { color: #0A66C2; } /* LinkedIn blue */
+  .social .contact-icons a .ai-google-scholar::before { color: #4285F4; } /* Google Scholar blue */
+  .social .contact-icons a .ai-orcid::before          { color: #A6CE39; } /* ORCID green */
+  .social .contact-icons a .fa-envelope::before,
+  .social .contact-icons a .ai-cv::before             { color: var(--global-theme-color); } /* no brand color: use site accent */
+  .social .contact-icons a:hover i::before            { opacity: .75; }
+  /* Slightly brighter versions so they stay readable in dark mode */
+  html[data-theme="dark"] .social .contact-icons a .fa-linkedin::before       { color: #4C9BE8; }
+  html[data-theme="dark"] .social .contact-icons a .ai-google-scholar::before { color: #7BAAF7; }
+</style>
