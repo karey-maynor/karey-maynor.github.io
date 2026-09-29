@@ -3,7 +3,6 @@ layout: page
 permalink: /publications/journals/
 title: journal articles
 nav: false
-description: Peer-reviewed journal articles, newest first.
 ---
 
 <!-- Listed under the "publications" dropdown (see children: in _pages/publications.md) -->
