@@ -25,6 +25,7 @@ cv:
         highlights:
           - "Dissertation Title: Techno-economic enhancement of hydrate-based technologies and direct air capture"
           - "Cumulative GPA: 4.00"
+          
       - name: Texas A&M University – College Station
         date: May 2017
         summary: B.S. in Chemical Engineering
@@ -34,14 +35,15 @@ cv:
 
     Research Experience:
       # ── Postdoc (not on the CV yet). Remove the "#" from these lines when you're ready to add it:
-      # - name: Water-Energy Research Laboratory (WERL), Georgia Institute of Technology
-      #   date: Month 2026 - present
-      #   summary: Postdoctoral Fellow
-      #   highlights:
+      - name: Water-Energy Research Laboratory (WERL), Georgia Institute of Technology
+        date: Month 2026 - present
+        summary: Postdoctoral Fellow
+        highlights:
       #     - Your first bullet here.
       - name: Bahadur Research Group, The University of Texas at Austin
         date: Mar. 2022 - present
         summary: "PI: Dr. Vaibhav Bahadur"
+        
       - name: National Science Foundation Graduate Research Fellow
         date: 2023 awardee
         highlights:
@@ -52,12 +54,14 @@ cv:
           - Collaborating with researchers from Instituto Superior Técnico, University of Lisbon to develop novel magnesium based ionic liquids for CCUS and gas separation applications.
           - Developing first principles, system-level, and techno-economic models of a novel mass exchanger for use in direct air capture installations.
           - Studied the economic and emissions impact of electrified hydrogen production on the final costs of ethanol in the Midwest utilizing Aspen Plus, H2A-Lite, and GREET models.
+          
       - name: Graduate Research Assistant
         date: Mar. 2022 – Sept. 2023
         highlights:
           - Designed and executed THF hydrate formation studies to further understand the mechanisms of magnesium-based nucleation promotion.
           - Developed a process model in Aspen Plus and a techno-economic model in MATLAB to analyze the economic and emissions benefits of clean hydrogen-based ammonia production.
           - ARPA-E sponsored project to develop novel insulating materials to extend the life of power transformers. Experimental data was used to refine and verify ANSYS thermal model of the transformer. Characterized thermal degradation threshold for insulating materials via viscosity and tensile strength measurements.
+          
       - name: Systems Optimization & Multi-Scale Analysis Lab, Texas A&M University
         date: Summer 2016
         summary: Undergraduate Research Assistant
