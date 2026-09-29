@@ -33,7 +33,7 @@ cv:
         highlights:
           - Safety Engineering Certificate; Minors in Business and Chemistry
 
-    Experience:
+    Research Experience:
       - company: Georgia Institute of Technology
         position: Postdoctoral Fellow, Water-Energy Research Laboratory (WERL)
         location: Atlanta, GA
@@ -73,6 +73,15 @@ cv:
         highlights:
           - Led two lab sections per semester covering experimental design, uncertainty analysis, and heat transfer systems analysis.
 
+      - company: Systems Optimization & Multi-Scale Analysis Lab, Texas A&M University
+        position: Undergraduate Research Assistant
+        location: College Station, TX
+        start_date: 2016-06
+        end_date: 2016-08
+        highlights:
+          - Investigated water extraction and purification from effluent streams to develop a process superstructure and MINLP model.
+
+    Professional Experience:
       - company: Heat Transfer Research, Inc. (HTRI)
         position: Test Engineer I & II
         location: Navasota, TX
@@ -84,16 +93,8 @@ cv:
           - "Technical Lead, ISO 17025 quality management: led the company through two reaccreditation audits and managed technical staff on certified testing contracts."
           - "Safety Program Lead: led a team of management and technicians to overhaul safety practices and standardized HTRI's HAZOP study process."
 
-      - company: Systems Optimization & Multi-Scale Analysis Lab, Texas A&M University
-        position: Undergraduate Research Assistant
-        location: College Station, TX
-        start_date: 2016-06
-        end_date: 2016-08
-        highlights:
-          - Investigated water extraction and purification from effluent streams to develop a process superstructure and MINLP model.
-
     Honors and Awards:
-      - title: NSF Graduate Research Fellowship
+      - title: **NSF Graduate Research Fellowship**
         authors:
           - National Science Foundation
         awarder: National Science Foundation
