@@ -1,1 +1,141 @@
+{% comment %}
+  Local override of the al_folio_cv gem's CV layout (save as _includes/cv/render.liquid).
+  Shows every section of _data/cv.yml in the exact order it appears in the file, with the
+  exact text and dates as written. Handles these entry types:
+    - plain text lines           - "text"
+    - bullets                    - bullet: text
+    - label/details lines        - label: X / details: Y
+    - named entries              - name / date / location / summary / highlights
+{% endcomment %}
 
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {{ page.title }}
+      {% if page.cv_pdf %}
+        <a
+          {% if page.cv_pdf contains '://' %}
+            href="{{ page.cv_pdf }}"
+          {% else %}
+            href="{{ page.cv_pdf | relative_url }}"
+          {% endif %}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="float-right"
+          title="Download PDF"
+        >
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      {% endif %}
+    </h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    <div class="cv cv-exact">
+      {% assign cv = site.data.cv.cv %}
+      {% if cv %}
+        {% for section_pair in cv.sections %}
+          {% assign section_title = section_pair[0] %}
+          {% assign section_entries = section_pair[1] %}
+          <a class="anchor" id="{{ section_title | slugify }}"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
+            <div class="card-text font-weight-light">
+              {% assign first = section_entries | first %}
+              {% if first.bullet %}
+                <ul class="cvx-list">
+                  {% for entry in section_entries %}
+                    <li>{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                  {% endfor %}
+                </ul>
+              {% else %}
+                {% for entry in section_entries %}
+                  {% if entry.name %}
+                    <div class="cvx-entry">
+                      <div class="cvx-head">
+                        <span class="cvx-name">{{ entry.name | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                        {% if entry.date or entry.location %}
+                          <span class="cvx-date">
+                            {%- if entry.location -%}{{ entry.location }}{%- if entry.date -%}<br>{%- endif -%}{%- endif -%}
+                            {{- entry.date -}}
+                          </span>
+                        {% endif %}
+                      </div>
+                      {% if entry.summary %}
+                        <div class="cvx-summary">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+                      {% endif %}
+                      {% if entry.highlights %}
+                        <ul class="cvx-list">
+                          {% for h in entry.highlights %}
+                            <li>{{ h | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                          {% endfor %}
+                        </ul>
+                      {% endif %}
+                    </div>
+                  {% elsif entry.label %}
+                    <p class="cvx-line"><strong>{{ entry.label }}:</strong> {{ entry.details | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                  {% elsif entry.bullet %}
+                    <ul class="cvx-list"><li>{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li></ul>
+                  {% else %}
+                    {% comment %} A line that is only **Bold Text** is shown as a subheading {% endcomment %}
+                    {% assign t = entry | strip %}
+                    {% assign head = t | slice: 0, 2 %}
+                    {% assign tail = t | slice: -2, 2 %}
+                    {% assign plain = t | remove: '**' %}
+                    {% assign diff = t.size | minus: plain.size %}
+                    {% if t contains '#columns(' %}
+                      {% comment %} PDF column layout: show the same items as a multi-column list {% endcomment %}
+                      {% assign inner = t | split: ')[' | last | replace: '#colbreak()', '\' | remove: ']' %}
+                      {% assign items = inner | split: '\' %}
+                      <ul class="cvx-list cvx-cols">
+                        {% for it in items %}
+                          {% assign label = it | remove: '•' | strip %}
+                          {% if label != '' %}<li>{{ label }}</li>{% endif %}
+                        {% endfor %}
+                      </ul>
+                    {% elsif head == '**' and tail == '**' and diff == 4 %}
+                      <div class="cvx-subhead">{{ plain }}</div>
+                    {% else %}
+                      <div class="cvx-text">{{ entry | markdownify }}</div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <p>No CV data found in <code>_data/cv.yml</code>.</p>
+      {% endif %}
+    </div>
+  </article>
+</div>
+
+<style>
+  .cv-exact .cvx-entry { margin-bottom: 1rem; }
+  .cv-exact .cvx-entry:last-child { margin-bottom: 0; }
+  .cv-exact .cvx-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+  .cv-exact .cvx-name { font-weight: 600; }
+  .cv-exact .cvx-name p { display: inline; margin: 0; }
+  .cv-exact .cvx-date { flex: none; text-align: right; font-size: .9rem; color: var(--global-text-color-light); white-space: nowrap; }
+  .cv-exact .cvx-summary { margin-top: .1rem; }
+  .cv-exact .cvx-list { margin: .35rem 0 0; padding-left: 1.25rem; }
+  .cv-exact .cvx-list li { margin-bottom: .25rem; }
+  .cv-exact .cvx-text p { margin-bottom: .5rem; }
+  .cv-exact .cvx-text ul { margin: .25rem 0 .75rem; padding-left: 1.25rem; }
+  .cv-exact .cvx-line { margin-bottom: .35rem; }
+  .cv-exact strong, .cv-exact b { font-weight: 700; }
+  .cv-exact .cvx-subhead { margin: 1rem 0 .4rem; font-weight: 700; color: var(--global-theme-color); }
+  .cv-exact .cvx-subhead:first-child { margin-top: 0; }
+  .cv-exact .cvx-cols { columns: 3; column-gap: 2rem; margin-top: 0; }
+  .cv-exact .cvx-cols li { break-inside: avoid; }
+  @media (max-width: 767.98px) { .cv-exact .cvx-cols { columns: 2; } }
+  @media (max-width: 575.98px) {
+    .cv-exact .cvx-cols { columns: 1; }
+    .cv-exact .cvx-head { flex-direction: column; gap: 0; }
+    .cv-exact .cvx-date { text-align: left; white-space: normal; }
+  }
+</style>
