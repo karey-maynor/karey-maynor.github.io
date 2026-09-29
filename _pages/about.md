@@ -49,3 +49,18 @@ Outside of research, I enjoy cooking, hiking, playing tennis, and traveling.
   html[data-theme="dark"] .social .contact-icons a .fa-linkedin::before       { color: #4C9BE8; }
   html[data-theme="dark"] .social .contact-icons a .ai-google-scholar::before { color: #7BAAF7; }
 </style>
+
+<script>
+  // Custom hover text for the Scholar and ORCID icons (the theme doesn't let you set these directly).
+  document.addEventListener("DOMContentLoaded", function () {
+    var hover = {
+      "scholar.google.com": "Google Scholar profile",
+      "orcid.org": "ORCID profile"
+    };
+    document.querySelectorAll(".contact-icons a, .navbar-brand.social a").forEach(function (a) {
+      for (var site in hover) {
+        if (a.href.indexOf(site) !== -1) a.title = hover[site];
+      }
+    });
+  });
+</script>
