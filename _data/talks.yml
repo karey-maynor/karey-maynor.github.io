@@ -1,10 +1,19 @@
 # _data/talks.yml
 # Conference papers, presentations, posters, and workshops — the "separate
 # area" kept out of papers.bib (which holds journal articles only).
-# Grouped on the page by `category`; sorted newest-first within each group.
+# Grouped on the page by `category` (must be exactly: Conference Papers, Presentations,
+# or Workshops & Reports — anything else won't show), then by year, newest first.
 # Add a new item by copying a block. Required: title, venue, date, category.
 
 # ============================ CONFERENCE PAPERS ============================
+- title: "Process Intensification to Enable CO₂ Hydrates-Based Seabed Carbon Sequestration"
+  authors: "K. Maynor, M. Hamalian, V. Bahadur"
+  venue: "11th International Conference on Gas Hydrates (ICGH-11) & 3rd European Conference on Gas Hydrates (ECGH-3)"
+  location: "Lyon, France"
+  date: 2026-07-03
+  type: Oral
+  category: Conference Papers
+
 - title: "System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas"
   authors: "K. Maynor, G. Childers, T. Soori, N. Lin, M. Lewis, V. Bahadur"
   venue: "ASME 2025 19th International Conference on Energy Sustainability (ES2025)"
@@ -35,14 +44,16 @@
   venue: "11th International Conference on Gas Hydrates (ICGH-11) & 3rd European Conference on Gas Hydrates (ECGH-3)"
   location: "Lyon, France"
   date: 2026-07-03
-  category: Presentation
+  type: Oral
+  category: Presentations
 
 - title: "Process Intensification to Enable CO₂ Hydrates-Based Seabed Carbon Sequestration"
   authors: "K. Maynor, M. Hamalian, V. Bahadur"
-  venue: "Center for Energy Resources Engineering Seminar Series"
+  venue: "Center for Energy Resources Engineering Seminar Series, Technical University of Denmark (DTU)"
   location: "Lyngby, Denmark"
   date: 2026-06-11
-  category: Invited Talk
+  type: Invited Seminar
+  category: Presentations
   
 - title: "Carbon Dioxide Hydrate Formation-Based Carbon Capture from Mixtures of Carbon Dioxide and Nitrogen"
   authors: "K. Maynor, M. Hamalian, V. Bahadur"
