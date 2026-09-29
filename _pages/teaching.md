@@ -4,7 +4,7 @@ permalink: /teaching/
 title: teaching
 description: Training in teaching and pedagogy, and experience in the lab and classroom.
 nav: true
-nav_order: 6
+nav_order: 5
 ---
 
 <style>
