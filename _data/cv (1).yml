@@ -1,0 +1,203 @@
+# CV data for the /cv/ page and the downloadable PDF (built by the "Render a CV" GitHub Action).
+# Section order and wording follow Karey's CV exactly. Sections appear in the order listed here.
+# Dates are free text, so write them exactly as you want them shown.
+# Formatting: entry names are NOT bold automatically. Use **bold** for organizations and *italics* for roles
+# (wrap the whole value in quotes when it starts with * ), e.g. name: "**Heat Transfer Research, Inc.**" / name: "*Test Engineer I & II*"
+# Publications use ACS style: Authors (Last, F.; ...). Title. *Journal Abbrev.* **Year**, *Volume* (Issue), Pages. DOI
+# Note: write \u2060 between bold/italic text and a following semicolon (e.g. **Maynor, K.**\u2060; ) or the PDF drops the semicolon.
+
+cv:
+  name: Karey Maynor
+  # email: you@gatech.edu        # ← add the address you want public, then remove the "#"
+  website: https://karey-maynor.github.io
+  social_networks:
+    - network: ORCID
+      username: 0009-0009-3351-8408
+
+  sections:
+    Research Interests:
+      # Shown in 2 columns in the PDF (3 on the website). To edit: each item is "• Item \"
+      # (keep the bullet and the backslash); #colbreak() starts the second column.
+      - '#columns(2, gutter: 1em)[• Thermal/Energy Systems \ • Thermal/Fluid Science \ • Thermal Management \ • Liquid/Gas Separation \ • Ionic Liquids & Metal Organic Frameworks \ • Hydrates \ #colbreak() • Carbon Capture, Utilization, & Storage (CCUS) \ • Desalination \ • Low-carbon Energy Solutions \ • Hydrogen \ • Waste Valorization \ • Circular Economy \]'
+
+    Education:
+      - name: "**The University of Texas at Austin**"
+        date: August 2026
+        summary: Ph.D. in Mechanical Engineering
+        highlights:
+          - "Dissertation Title: *Techno-economic enhancement of hydrate-based technologies and direct air capture*"
+          - "Cumulative GPA: 4.00"
+          
+      - name: "**Texas A&M University – College Station**"
+        date: May 2017
+        summary: B.S. in Chemical Engineering
+        highlights:
+          - Safety Engineering Certificate, Minors in Business and Chemistry
+          - "Cumulative GPA: 3.34"
+
+    Research Experience:
+      - name: "**Water-Energy Research Laboratory (WERL)**, Georgia Institute of Technology"
+        date: Month 2026 - present   # ← fill in your start month
+        summary: "*Postdoctoral Fellow*"
+        # highlights:                # ← add bullets here when ready (remove the # on both lines)
+        #   - Your first bullet here.
+      - name: "**Bahadur Research Group**, The University of Texas at Austin"
+        date: Mar. 2022 - present
+        summary: "PI: Dr. Vaibhav Bahadur"
+        
+      - name: "**National Science Foundation** *Graduate Research Fellow*"
+        date: 2023 awardee
+        highlights:
+          - Conducted CO₂ hydrate formation experiments using gas mixtures of CO₂ and N₂ to evaluate magnesium kinetic promoter and to study the impact of lower concentrated CO₂ streams on hydrate formation rates in a bubble column reactor.
+          - Modeling techno-economics of a hydrates-based desalination facility from mixed gas sources to understand the economic implications and to compare against pure CO₂ sequestration costs and leading desalination techniques.
+          - Developing a life cycle analysis study for CO₂ separation and sequestration via hydrates for storage on the seabed floor.
+          - Designed and fabricated thermal testbeds and developed CFD simulations (ANSYS) to quantify heat transfer enhancements in heat pipes and interposers for next-generation integrated electronic packages as part of two Texas Institute of Electronics (TIE) projects.
+          - Collaborating with researchers from Instituto Superior Técnico, University of Lisbon to develop novel magnesium based ionic liquids for CCUS and gas separation applications.
+          - Developing first principles, system-level, and techno-economic models of a novel mass exchanger for use in direct air capture installations.
+          - Studied the economic and emissions impact of electrified hydrogen production on the final costs of ethanol in the Midwest utilizing Aspen Plus, H2A-Lite, and GREET models.
+          
+      - name: "*Graduate Research Assistant*"
+        date: Mar. 2022 – Sept. 2023
+        highlights:
+          - Designed and executed THF hydrate formation studies to further understand the mechanisms of magnesium-based nucleation promotion.
+          - Developed a process model in Aspen Plus and a techno-economic model in MATLAB to analyze the economic and emissions benefits of clean hydrogen-based ammonia production.
+          - ARPA-E sponsored project to develop novel insulating materials to extend the life of power transformers. Experimental data was used to refine and verify ANSYS thermal model of the transformer. Characterized thermal degradation threshold for insulating materials via viscosity and tensile strength measurements.
+          
+      - name: "**Systems Optimization & Multi-Scale Analysis Lab**, Texas A&M University"
+        date: Summer 2016
+        summary: "*Undergraduate Research Assistant*"
+        highlights:
+          - Investigated water extraction and purification technologies from effluent streams to develop a process superstructure and MINLP model.
+
+    Honors & Awards:
+      - name: National Science Foundation Graduate Research Fellowship
+        date: 2023 awardee
+      - name: Leigh Family Endowed Graduate Fellowship in Mechanical Engineering
+        date: Aug. 2025
+      - name: Professional Development Award, Graduate School
+        date: Nov. 2023 & Aug. 2025
+      - name: Chevron Energy Graduate Fellow Award
+        date: Sept. 2023
+      - name: Cockrell School of Engineering Thrust 2000 Fellowship
+        date: Aug. 2021 – 2025
+      - name: T.W. Whaley, Jr. Friends of Alec Endowed Scholarship
+        date: Aug. 2021 – May 2022
+
+    Publications:
+      - "*Peer-Reviewed*"
+      - "**Maynor, K.**\u2060; Hamalian, M.; Bahadur, V. Ultrafast Formation of Carbon Dioxide Hydrates from Mixtures of Carbon Dioxide and Nitrogen Gases. *Int. J. Greenh. Gas Control* **2026**, *155*, 104751. [https://doi.org/10.1016/j.ijggc.2026.104751](https://doi.org/10.1016/j.ijggc.2026.104751)"
+      - "**Maynor, K.**\u2060; Hamalian, M.; Srivastava, S.; Pandey, J. S.; Bahadur, V. Review of Clathrate Hydrate-Based CO₂ Capture: Benchmarking Performance, Economics, and Life Cycle Considerations. *J. Environ. Chem. Eng.* **2026**, *14* (6), 124335. [https://doi.org/10.1016/j.jece.2026.124335](https://doi.org/10.1016/j.jece.2026.124335)"
+      - "**Maynor, K.**\u2060; Arzumanyan, M.; Lin, N.; Bahadur, V. Levelized Cost Pass-through of Green Hydrogen in the Bioethanol Fuel Value Chain in U.S. Midwest. *Sustain. Energy Technol. Assess.* **2026**, *87*, 104911. [https://doi.org/10.1016/j.seta.2026.104911](https://doi.org/10.1016/j.seta.2026.104911)"
+      - "Hamalian, M.; **Maynor, K.**\u2060; Bahadur, V. Influence of Bubble Delivery Parameters on the Formation Kinetics and Composition of Carbon Dioxide Hydrate Slurry. *Chem. Eng. J.* **2025**, *523*, 168399. [https://doi.org/10.1016/j.cej.2025.168399](https://doi.org/10.1016/j.cej.2025.168399)"
+      - "Hamalian, M.; Bhati, A.; **Maynor, K.**\u2060; Bahadur, V. Techno-Economic Analysis of Electrochemical Carbon Capture from Oceanwater Integrated with Hydrates-Based Sequestration. *Appl. Energy* **2025**, *392*, 125960. [https://doi.org/10.1016/j.apenergy.2025.125960](https://doi.org/10.1016/j.apenergy.2025.125960)"
+      - "**Maynor, K.**\u2060; Bhati, A.; Hamalian, M.; Ferraria, A. M.; Ribeiro, A. P. D. C.; Moita, A. S.; Bahadur, V. Magnesium-Induced Rapid Nucleation of Tetrahydrofuran Hydrates. *Langmuir* **2024**, *40* (41), 21758–21766. [https://doi.org/10.1021/acs.langmuir.4c02882](https://doi.org/10.1021/acs.langmuir.4c02882)"
+      - "Bilyaz, S.; Bhati, A.; Hamalian, M.; **Maynor, K.**\u2060; Soori, T.; Gattozzi, A.; Penney, C.; Weeks, D.; Xu, Y.; Hu, L.; Zhu, J. Y.; Nelson, J. K.; Hebner, R.; Bahadur, V. Modeling the Impact of High Thermal Conductivity Paper on the Performance and Life of Power Transformers. *Heliyon* **2024**, *10* (6), e27783. [https://doi.org/10.1016/j.heliyon.2024.e27783](https://doi.org/10.1016/j.heliyon.2024.e27783)"
+      - "*Under review*"
+      - "Soori, T.; Zhang, R.; **Maynor, K.**\u2060; Xu, Y.; Zhang, Q.; Hamalian, M.; Zhu, J. Y.; Nelson, K.; Hebner, R.; Hu, L.; Bahadur, V. Accelerated Thermal Aging and Life Estimation of Transformer Insulation Paper in Ester Oil. *Polym. Test.* **2025**."
+      - "*In preparation*"
+      - "**Maynor, K.**\u2060; Bahadur, V. Hydrates-based desalination for brackish water treatment for providing water for data centers."
+      - "**Maynor, K.**\u2060; Bahadur, V. Techno-economic and first-principles model of a novel mass exchanger for direct air carbon capture."
+
+    Conference Proceedings:
+      - "**Maynor, K.**\u2060; Hamalian, M.; Bahadur, V. Carbon Dioxide Hydrate Formation-Based Carbon Capture from Mixtures of Carbon Dioxide and Nitrogen. In *Proceedings of the ASME 2025 19th International Conference on Energy Sustainability*\u2060; Westminster, CO, **2025**."
+      - "**Maynor, K.**\u2060; Childers, G.; Soori, T.; Lin, N.; Lewis, M.; Bahadur, V. System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas. In *Proceedings of the ASME 19th International Conference on Energy Sustainability*\u2060; Westminster, CO, **2025**."
+      - "Hamalian, M.; **Maynor, K.**\u2060; Bahadur, V. Effects of Bubble Size and Density on CO₂ Hydrate Slurry Production for Carbon Sequestration. In *Proceedings of the ASME 19th International Conference on Energy Sustainability*\u2060; Westminster, CO, **2025**. (awarded best paper)"
+
+    Technical Reports & Workshops:
+      - "**Maynor, K.**\u2060; Ribeiro, A. P. D. C. Carbon Dioxide Hydrates for Carbon Management: Opportunities for Capture, Storage and Utilization. [Workshop] In *Proceedings of the 9th Multidisciplinary Symposium on Circular Economy and Urban Mining*\u2060; Procida, IT, **2026**."
+      - "Arzumanyan, M.; Bahadur, V.; Ning, L.; Rupam, T. H.; **Maynor, K.**\u2060; Katakam, S.; Usama, M. *Water Use Requirements for Data Centers in Texas: A White Paper on the Evolving Demands of Water Use in Data Center Infrastructure in Texas* (pp. 1–31) [White Paper]; Bureau of Economic Geology, The University of Texas at Austin, **2025**. compass.beg.utexas.edu/"
+      - "**Maynor, K.**\u2060; Huang, L. *PHE-18-TR Shellside Boiling Tests in Plate-and-shell Heat Exchanger*\u2060; Heat Transfer Research Inc.: Navasota, TX, **2018**. htri.net/phe-18-tr"
+
+    Presentations:
+      - "**Maynor, K.**\u2060; Hamalian, M.; Bahadur, V. Process Intensification to Enable CO₂ Hydrate-based Seabed Carbon Sequestration. In *Proceedings of the 11th International Conference on Gas Hydrates & 3rd European Conference on Gas Hydrates*\u2060; Lyon, FR, **2026**."
+      - "**Maynor, K.**\u2060; Hamalian, M.; Bahadur, V. Process Intensification to Enable CO₂ Hydrate-based Seabed Carbon Sequestration. Invited Guest Seminar, Center for Energy Resource Engineering, Denmark Technical University, Lyngby, DK, **2026**."
+      - "**Maynor, K.**\u2060; Hamalian, M.; Bahadur, V. Carbon Dioxide Hydrate Formation-Based Carbon Capture from Mixtures of Carbon Dioxide and Nitrogen [Oral]. ASME 19th International Conference on Energy Sustainability, Westminster, CO, **2025**."
+      - "**Maynor, K.**\u2060; Childers, G.; Soori, T.; Lin, N.; Lewis, M.; Bahadur, V. System-Level and Techno-Economic Analysis of Ammonia Production from Clean Hydrogen in the Permian Basin in Texas.\n\n- 2025, Jul. [Oral]. ASME 19th International Conference on Energy Sustainability, Westminster, CO.\n- 2024, Oct. [Poster]. UT Austin Energy Institute Hydrogen Workforce Summit & Hydrogen Day 2024, Austin, TX. (awarded 5th place in poster competition out of 41)\n- 2024, Jun. [Oral]. Chevron Energy Fellows Virtual Forum.\n- 2024, Apr. [Poster]. UT Austin Center for Electromechanics H2@Scale in Texas Ribbon Cutting Ceremony 2024, Austin, TX.\n- 2025, Mar. [Oral and Poster]. UT Austin Energy Institute UT Energy Week 2024, Austin, TX.\n- 2023, Nov. [Oral]. ASME 2023 International Mechanical Engineering Congress and Exposition, New Orleans, LA."
+
+    Professional Experience:
+      - name: "**Heat Transfer Research, Inc.**"
+        date: Jun. 2017 – Jun. 2021
+      - name: "*Test Engineer I & II*"
+        highlights:
+          - Conducted research experiments on closed loop pilot scale systems to study heat transfer and fluid dynamic phenomena.
+          - Designed and directed construction of a $107k unit upgrade and delivered the project 33% under budget and 2 months ahead of schedule.
+          - Performed data analysis and rigorous engineering calculations for both theory-based and design validation experiments.
+      - name: "*Technical Lead – ISO 17025 QMS*"
+        highlights:
+          - Led the company through 2 reaccreditation audits, maintaining compliance in the interim.
+          - Managed technical personnel during certified testing contracts.
+      - name: "*Lead – Safety Program*"
+        highlights:
+          - Spearheaded a team of top management & research technicians to overhaul safety practice.
+          - Standardized HTRI’s HAZOP study process & lead the team.
+
+    Teaching:
+      - name: "**The University of Texas at Austin**"
+        date: Aug. 2022 – Apr. 2023
+        summary: "*Graduate Teaching Assistant*"
+        highlights:
+          - Led 2 sections per semester of ME139L Experimental Heat Transfer Lab. Taught experimental design concepts, uncertainty analysis, and systems analysis related to heat transfer systems.
+      - name: "**Certifications**"
+        highlights:
+          # - Future Faculty Fellows Program, Center for Teaching and Learning, Georgia Institute of Technology (in progress)
+          - Center for Teaching and Learning Teaching Preparation Series Advanced Certification
+          - Cockrell School of Engineering Teaching Assistant Certification
+
+    Leadership & Community Involvement:
+      - name: "**Mentorship & Supervision**, The University of Texas at Austin"
+        date: Aug. 2022 – Aug. 2026
+        highlights:
+          - Responsible for mentoring and advising newly admitted students in Dr. Bahadur’s research group. Mentored 2 PhD, 1 masters, and 2 undergraduate students.
+      - name: "**Graduate Engineering Council**, The University of Texas at Austin"
+        date: Aug. 2021 – May 2024
+      - name: "*President*"
+        highlights:
+          - Led the highest attended career and research networking event for the graduate engineering community with over 60 poster presenters and 14 industry sponsors – Graduate and Industry Networking Event (GAIN).
+          - Awarded a record amount of over $10,000 for research and travel grants to graduate engineering students.
+          - Fulfilled GEC’s mission of improving the lives of engineering graduate students by increasing the number of social events and seminars, launching a series of seminars to navigate common graduate school challenges, and fundraising a record amount to support these events and GAIN.
+          - Served on the Senate of College Councils President committee, a student government body.
+      - name: "*Financial Director*"
+        highlights:
+          - Supported GEC financial obligations and goals by preparing and maintaining a detailed budget and fundraising for the organization to support student outreach activities, mental health seminars, research seminars, and the graduate and industry networking event (GAIN).
+          - Served on the Senate of College Councils Financial Director committee appropriating funds to support university wide student outreach events.
+      - name: "*Information Technology & Webpage Director*"
+        highlights:
+          - Managed the webpage, social media accounts, and all IT related responsibilities for the organization. Redesigned the website for improved user experience.
+      - name: "**Mechanical Engineering Mentor Program**, The University of Texas at Austin"
+        date: Aug. 2021 – May 2025
+        summary: "*Mentor & Mentee*"
+
+    Technical Skills:
+      - label: Programming Languages
+        details: Python, MATLAB, LabVIEW
+      - label: Simulation/Modeling
+        details: AspenPlus, ANSYS (Discovery, Fluent)
+
+    Professional Service & Memberships:
+      - name: "**Conferences**"
+        highlights:
+          - Chaired technical sessions at ASME Summer Heat Transfer Conference
+      - name: "**Reviewing Activities**"
+        highlights:
+          - Separation and Purification Technology Journal
+          - ASME Summer Heat Transfer Conference
+          - ASME Energy Sustainability Conference
+      - name: "**Memberships**"
+        highlights:
+          - American Society of Mechanical Engineers (ASME)
+          - American Institute of Chemical Engineers (AIChE)
+          - American Society of Thermal and Fluids Engineers (ASTFE)
+          - International Research Association on Circular Economy (IRACE)
+
+# PDF appearance (read by RenderCV only; the web page ignores this).
+design:
+  theme: classic
+  page:
+    size: us-letter
+    show_footer: false
+    show_top_note: false
+  entries:
+    allow_page_break: true   # lets long sections like Publications continue onto the next page
+  templates:
+    normal_entry:
+      main_column: "NAME\nSUMMARY\nHIGHLIGHTS"   # names are no longer auto-bold; formatting comes from ** / * in the data
