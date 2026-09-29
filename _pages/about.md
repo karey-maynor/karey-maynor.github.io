@@ -51,6 +51,11 @@ Outside of research, I enjoy cooking, hiking, playing tennis, and traveling.
     /* Smaller social icons (theme default is 4rem) */
   .social .contact-icons { font-size: 2rem; }
   .social .contact-icons a { margin: 0 .15rem; }
+    .post article > .clearfix p { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+  @media (min-width: 576px) {
+    .post .profile.float-right { margin-left: 2.25rem; margin-bottom: 1.5rem; }
+    .post .profile.float-left  { margin-right: 2.25rem; margin-bottom: 1.5rem; }
+  }
 </style>
 
 <script>
