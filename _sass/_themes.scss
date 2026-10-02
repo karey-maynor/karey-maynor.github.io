@@ -230,6 +230,10 @@ html[data-theme-setting="light"] {
  ******************************************************************************/
 $body-font-weight: 350;
 
+.publications h2.bibliography {
+  color: var(--global-text-color-light);
+}
+
 body,
 h1, h2, h3, h4, h5, h6,
 .font-weight-light {
