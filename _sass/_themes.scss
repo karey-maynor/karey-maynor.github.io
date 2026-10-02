@@ -241,3 +241,7 @@ h1, h2, h3, h4, h5, h6,
 .publications h2.bibliography {
   color: var(--global-theme-color);
 }
+
+.post-header:not(:has(.desc)) .post-title {
+  text-transform: uppercase;
+}
