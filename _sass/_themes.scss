@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6,
 
 // Publication year headings: the theme draws these in the faint divider color.
 // Use the accent green (same as the journal abbreviation bubbles); the line above stays light.
-html.publications h2.bibliography {
+html .publications h2.bibliography {
   color: var(--global-theme-color);
 }
 
