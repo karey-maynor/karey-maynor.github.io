@@ -4,7 +4,6 @@ permalink: /talks/
 title: talks
 nav: true
 nav_order: 4
-description: Presentations, posters, invited seminars, workshops, and reports, newest first.
 ---
 
 {% comment %}
