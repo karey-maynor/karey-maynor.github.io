@@ -51,7 +51,7 @@ nav_order: 3
 <hr class="rs-divider">
 
 <section class="rs-theme" id="water">
-<h2>Water for data centers and desalination</h2>
+<h2>DESALINATION TO MEET GROWING WATER DEMANDS</h2>
 <p>Water is becoming a constraint on the energy transition. In Texas, the growth of data centers is set to multiply their water demand within a few years, competing with cities, agriculture, and industry. I work on both sides of this problem: quantifying how much water data centers will need, both directly for cooling and indirectly through the electricity they consume, and evaluating new supplies from non-conventional sources such as oilfield produced water. Hydrate-based desalination, which uses CO₂ hydrates to pull fresh water out of brine, is one such pathway. My techno-economic analysis identifies where it could compete and which parts of the process must improve to get there.</p>
 <div class="rs-figs">
 <figure style="flex: 1.76"><img src="{{ '/assets/img/research/desal-process.jpg' | relative_url }}" alt="Process flow diagram of hydrate-based desalination using CO2 hydrates" data-zoomable loading="lazy"><figcaption>Hydrate-based desalination process for treating produced water. <em>Maynor &amp; Bahadur, in preparation.</em></figcaption></figure>
@@ -67,7 +67,7 @@ nav_order: 3
 <hr class="rs-divider">
 
 <section class="rs-theme" id="fuels">
-<h2>Clean hydrogen, ammonia, and biofuels</h2>
+<h2>LOW-CARBON HYDROGEN SUPPLY CHAIN - FROM HYDROGEN TO BIOFUELS</h2>
 <p>Clean hydrogen is only as valuable as the products it enables. Rather than evaluating hydrogen in isolation, I follow it through real supply chains to see where its cost and emissions benefits end up. This includes process modeling and techno-economic analysis of ammonia production from low-carbon hydrogen in the Permian Basin, and tracing green hydrogen through fertilizer, corn, and ethanol in the U.S. Midwest. The results identify the hydrogen prices and policies at which low-carbon fuels and chemicals become viable, and show how decarbonizing one link can lower emissions across an entire value chain.</p>
 <div class="rs-figs">
 <figure style="flex: 1.33"><img src="{{ '/assets/img/research/h2-value-chain.jpg' | relative_url }}" alt="Value chain of green hydrogen: hydrogen to ammonia fertilizer to corn to ethanol" data-zoomable loading="lazy"><figcaption>Following green hydrogen from production to ethanol. <em>Maynor et al., Sustain. Energy Technol. Assess., 2026.</em></figcaption></figure>
@@ -83,7 +83,7 @@ nav_order: 3
 <hr class="rs-divider">
 
 <section class="rs-theme" id="transformers">
-<h2>Thermal management for a reliable grid</h2>
+<h2>THERMAL MANAGEMENT - FROM CHIP TO GRID</h2>
 <p>The electric grid depends on power transformers, and many are due for replacement just as electricity demand is rising. A transformer's lifetime is set by its paper insulation, which degrades faster the hotter it runs. In collaborative work, we combine thermal modeling with accelerated aging experiments to show how insulation paper with higher thermal conductivity, and alternative ester-based coolants, can keep windings cooler and substantially extend transformer life. This offers a lower-cost path to a more reliable grid than wholesale replacement.</p>
 <div class="rs-figs">
 <figure style="flex: 1.53"><img src="{{ '/assets/img/research/xfmr-model.jpg' | relative_url }}" alt="Model geometry of a distribution transformer showing core, windings and insulation layers" data-zoomable loading="lazy"><figcaption>Thermal model of a distribution transformer. <em>Bilyaz et al., Heliyon, 2024.</em></figcaption></figure>
