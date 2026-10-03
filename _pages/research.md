@@ -29,6 +29,8 @@ nav_order: 3
   .rs-pubs li { margin-bottom: .15rem; }
   hr.rs-divider { margin: 2.5rem 0; border: 0; border-top: 1px solid var(--global-divider-color); }
   @media (max-width: 575.98px) { .rs-figs { flex-direction: column; } }
+  .rs-intro { font-size: 1.08rem; line-height: 1.7; margin-bottom: 2rem; text-align: justify; hyphens: auto; }
+  .rs-theme p { line-height: 1.7; text-align: justify; hyphens: auto; }
 </style>
 
 <p class="rs-intro">My research sits at the intersection of thermal–fluid engineering and techno-economics. I pair experiments and process models with cost and life-cycle analysis to find where new energy, water, and carbon technologies can realistically compete. The common thread is the energy–water–carbon nexus: how decarbonization, clean fuels, and the rapid growth of data centers are creating new demands on heat management, water supply, and energy infrastructure.</p>
